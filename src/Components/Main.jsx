@@ -112,6 +112,7 @@ export default function Main() {
                 alt="Skyscrapers"
               />
             </Link>
+
             <div className="p-6">
               <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                 Card title
