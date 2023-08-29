@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div>
-      <footer class="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+      <footer class="bg-blue-200 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
             <div className="items-center justify-between">
@@ -115,8 +115,8 @@ export default function Footer() {
             </div>
             <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
               <div>
-                <p class="font-medium">Company</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <p class="font-medium text-blue-900">Company</p>
+                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
                   <Link class="hover:opacity-75" href>
                     {" "}
                     About{" "}
@@ -136,8 +136,8 @@ export default function Footer() {
                 </nav>
               </div>
               <div>
-                <p class="font-medium">Services</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <p class="font-medium text-blue-900">Services</p>
+                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
                   <Link class="hover:opacity-75" href>
                     {" "}
                     1on1 Coaching{" "}
@@ -161,8 +161,8 @@ export default function Footer() {
                 </nav>
               </div>
               <div>
-                <p class="font-medium">Helpful Links</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <p class="font-medium text-blue-900">Helpful Links</p>
+                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
                   <Link class="hover:opacity-75" href>
                     {" "}
                     Contact{" "}
@@ -178,8 +178,8 @@ export default function Footer() {
                 </nav>
               </div>
               <div>
-                <p class="font-medium">Legal</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <p class="font-medium text-blue-900">Legal</p>
+                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
                   <Link class="hover:opacity-75" href>
                     {" "}
                     Privacy Policy{" "}

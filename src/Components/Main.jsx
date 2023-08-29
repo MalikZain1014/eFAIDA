@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Register from "./Register";
 export default function Main() {
   return (
     <div>
       <>
+        <Register />
         <section className="relative py-32 lg:py-36 bg-white">
           <div className="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
             <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 hidden lg:block">
@@ -59,7 +60,7 @@ export default function Main() {
                       disabled
                       name=""
                       id=""
-                      placeholder="malikzain1014@gmail.com"
+                      placeholder="ContactUs@gmail.com"
                       className="w-full py-3 outline-none   bg-transparent"
                     />
                     <Link to="./contact">
@@ -95,7 +96,7 @@ export default function Main() {
             <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
               <img
                 src="m 1.png"
-                alt=""
+                alt="pic"
                 width={2350}
                 height={2359}
                 className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96"
@@ -103,71 +104,31 @@ export default function Main() {
             </div>
           </div>
         </section>
-        <div className="grid-cols-1 sm:grid md:grid-cols-3 ">
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-            <Link to="https://youtu.be/Tn6-PIqc4UM?si=XUs9YdGDrG1jbfhM">
-              <Link
-                className="rounded-t-lg"
-                src="https://youtu.be/Tn6-PIqc4UM?si=XUs9YdGDrG1jbfhM"
-                alt="Skyscrapers"
-              />
-            </Link>
 
-            <div className="p-6">
-              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-            <div className="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-              <small>Last updated 3 mins ago</small>
-            </div>
-          </div>
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-            <a href="#!">
+        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+          <div className="md:flex">
+            <div className="md:shrink-0">
               <img
-                className="rounded-t-lg"
-                src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
-                alt="Los Angeles Skyscrapers"
+                className="h-48 w-full object-cover md:h-full md:w-48"
+                src="/company.png"
+                alt="Modern building architecture"
               />
-            </a>
-            <div className="p-6">
-              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                This card has supporting text below as a natural lead-in to
-                additional content.
+            </div>
+            <div className="p-8">
+              <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                Company retreats
+              </div>
+              <a
+                href="/"
+                className="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+              >
+                Incredible accommodation for your team
+              </a>
+              <p className="mt-2 text-slate-500">
+                Looking to take your team away on a retreat to enjoy awesome
+                food and take in some sunshine? We have a list of places to do
+                just that.
               </p>
-            </div>
-            <div className="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-              <small>Last updated 3 mins ago</small>
-            </div>
-          </div>
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-            <a href="#!">
-              <img
-                className="rounded-t-lg"
-                src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
-                alt="Palm Springs Road"
-              />
-            </a>
-            <div className="p-6">
-              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-            </div>
-            <div className="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-              <small>Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
