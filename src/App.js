@@ -12,6 +12,7 @@ import About from "./Components/About";
 import Error from "./Components/Error";
 import Apply from "./Components/Apply";
 import Regisnow from "./Components/Regisnow";
+import Internypay from "./Components/Internypay";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/*" element={<Error />} />
         <Route path="/registernow" element={<Regisnow />} />
+        <Route path="/internypay" element={<Internypay />} />
       </Routes>
       <Apply />
       <Footer />

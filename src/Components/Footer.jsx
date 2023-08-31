@@ -4,26 +4,32 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div>
-      <footer class="bg-blue-200 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">
-        <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
-            <div className="items-center justify-between">
-              <img src="m 2.png" class=" h-12  " alt="logo" />
-              <p class="max-w-xs mt-4 text-sm text-gray-600">
+      <footer
+        classNameName=" font-bold py-2 px-4"
+        style={{
+          backgroundImage: `url("/About.jpeg")`,
+          backgroundSize: `cover`,
+        }}
+      >
+        <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
+            <div classNameName="items-center justify-between">
+              <img src="m 2.png" className=" h-12  " alt="logo" />
+              <p className="max-w-xs mt-4 text-sm text-blue-300 ">
                 Powered by transparency, technology-driven customer interaction
                 process, and highly proficient teams.
               </p>
-              <div class="flex mt-8 space-x-6 text-gray-600">
+              <div className="flex mt-8 space-x-6 text-blue-300 ">
                 <Link
                   to="/"
-                  class="hover:opacity-75"
+                  className="hover:opacity-75"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <Link />
-                  <span class="sr-only"> Facebook </span>
+                  <span className="sr-only"> Facebook </span>
                   <svg
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -37,13 +43,13 @@ export default function Footer() {
                 </Link>
                 <Link
                   to="/"
-                  class="hover:opacity-75"
+                  className="hover:opacity-75"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span class="sr-only"> Instagram </span>
+                  <span className="sr-only"> Instagram </span>
                   <svg
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -57,13 +63,13 @@ export default function Footer() {
                 </Link>
                 <Link
                   to="/"
-                  class="hover:opacity-75"
+                  className="hover:opacity-75"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span class="sr-only"> Twitter </span>
+                  <span className="sr-only"> Twitter </span>
                   <svg
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -72,14 +78,14 @@ export default function Footer() {
                   </svg>
                 </Link>
                 <Link
-                  class="hover:opacity-75"
+                  className="hover:opacity-75"
                   href
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span class="sr-only"> GitHub </span>
+                  <span className="sr-only"> GitHub </span>
                   <svg
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -92,14 +98,14 @@ export default function Footer() {
                   </svg>
                 </Link>
                 <Link
-                  class="hover:opacity-75"
+                  className="hover:opacity-75"
                   href
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span class="sr-only"> Dribbble </span>
+                  <span className="sr-only"> Dribbble </span>
                   <svg
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -113,86 +119,86 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
               <div>
-                <p class="font-medium text-blue-900">Company</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
-                  <Link class="hover:opacity-75" href>
+                <p className="font-medium text-blue-200 ">Company</p>
+                <nav className="flex flex-col mt-4 space-y-2 text-sm text-blue-300 ">
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     About{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Meet the Team{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     History{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Careers{" "}
                   </Link>
                 </nav>
               </div>
               <div>
-                <p class="font-medium text-blue-900">Services</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
-                  <Link class="hover:opacity-75" href>
+                <p className="font-medium text-blue-200">Services</p>
+                <nav className="flex flex-col mt-4 space-y-2 text-sm text-blue-300 ">
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     1on1 Coaching{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Company Review{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Accounts Review{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     HR Consulting{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     SEO Optimisation{" "}
                   </Link>
                 </nav>
               </div>
               <div>
-                <p class="font-medium text-blue-900">Helpful Links</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
-                  <Link class="hover:opacity-75" href>
+                <p className="font-medium text-blue-200">Helpful Links</p>
+                <nav className="flex flex-col mt-4 space-y-2 text-sm text-blue-300 ">
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Contact{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     FAQs{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Live Chat{" "}
                   </Link>
                 </nav>
               </div>
               <div>
-                <p class="font-medium text-blue-900">Legal</p>
-                <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
-                  <Link class="hover:opacity-75" href>
+                <p className="font-medium text-blue-200">Legal</p>
+                <nav className="flex flex-col mt-4 space-y-2 text-sm text-blue-300 ">
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Privacy Policy{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Terms &amp; Conditions{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Returns Policy{" "}
                   </Link>
-                  <Link class="hover:opacity-75" href>
+                  <Link className="hover:opacity-75" href>
                     {" "}
                     Accessibility{" "}
                   </Link>
@@ -200,7 +206,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p class="mt-8 text-xs text-gray-800">
+          <p className="mt-8 text-xs text-white  font-serif">
             All Content ©2023 eFAIDA Technologies{" "}
           </p>
         </div>

@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import Login from "./Login";
+// import Login from "./Login";
 
 import { Dialog, Popover, Transition } from "@headlessui/react";
 import {
@@ -63,15 +63,17 @@ const callsToAction = [
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
   return (
     <>
-      <header className="bg-white">
+      <header className="">
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
+          className=" mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+          // aria-label="Global"
         >
-          <div className="flex lg:flex-1 flex items-center gap-x-1 text-sm font-bold leading-6 text-blue-400">
+          <div className="flex lg:flex-1 flex items-center gap-x-1 text-sm font-bold leading-6 text-blue-400  ">
             <Link to="/" className="-m-1.5 p-1.5 flex">
               <span className="sr-only">Your Company</span>
               <img className="h-12  w-auto" src="m 2.png" alt="logo" />
@@ -92,12 +94,14 @@ export default function Nav() {
             <Link
               to="/"
               className="text-sm font-semibold leading-6 text-gray-900"
+              onClick={closeMobileMenu}
             >
               HOME
             </Link>
             <Link
               to="/services"
               className="text-sm font-semibold leading-6 text-gray-900"
+              onClick={closeMobileMenu}
             >
               SERVICES
             </Link>
@@ -137,6 +141,7 @@ export default function Nav() {
                             <Link
                               to={item.href}
                               className="block font-semibold text-gray-900"
+                              onClick={closeMobileMenu}
                             >
                               {item.name}
                               <span className="absolute inset-0" />
@@ -154,6 +159,7 @@ export default function Nav() {
                           key={item.name}
                           to={item.href}
                           className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                          onClick={closeMobileMenu}
                         >
                           <item.icon
                             className="h-5 w-5 flex-none text-gray-400"
@@ -171,12 +177,13 @@ export default function Nav() {
             <Link
               to="/about"
               className="text-sm font-semibold leading-6 text-gray-900"
+              onClick={closeMobileMenu}
             >
               ABOUT US
             </Link>
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link to="/login" onClick={Login}>
+            <Link to="/login">
               <button
                 className="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-8 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
               after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-red-900 hover:after:opacity-100  hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]"
@@ -232,12 +239,14 @@ export default function Nav() {
                   <Link
                     to="/"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    onClick={closeMobileMenu}
                   >
                     HOME
                   </Link>
                   <Link
                     to="/services"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    onClick={closeMobileMenu}
                   >
                     SERVICES
                   </Link>
@@ -278,6 +287,7 @@ export default function Nav() {
                                   <Link
                                     to={item.href}
                                     className="block font-semibold text-gray-900"
+                                    onClick={closeMobileMenu}
                                   >
                                     {item.name}
                                     <span className="absolute inset-0" />
@@ -296,6 +306,7 @@ export default function Nav() {
                                   key={item.name}
                                   to={item.href}
                                   className="flex items-center justify-center  gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 hover:rounded-full"
+                                  onClick={closeMobileMenu}
                                 >
                                   <item.icon
                                     className="h-5 w-5 flex-none text-gray-400"
@@ -314,12 +325,13 @@ export default function Nav() {
                   <Link
                     to="/about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    onClick={closeMobileMenu}
                   >
                     ABOUT US
                   </Link>
                 </div>
                 <div className="py-6">
-                  <Link to="/login" onClick={Login}>
+                  <Link to="/login" onClick={closeMobileMenu}>
                     <button
                       className="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-8 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
                     after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-red-900 hover:after:opacity-100  hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]"
