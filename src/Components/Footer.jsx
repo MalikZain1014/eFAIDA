@@ -7,7 +7,7 @@ export default function Footer() {
       <footer
         classNameName=" font-bold py-2 px-4"
         style={{
-          backgroundImage: `url("/About.jpeg")`,
+          backgroundColor: `#36275d`,
           backgroundSize: `cover`,
         }}
       >

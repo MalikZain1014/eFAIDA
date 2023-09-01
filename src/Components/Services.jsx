@@ -5,6 +5,23 @@ import {
   ServerIcon,
 } from "@heroicons/react/20/solid";
 
+const Cards = [
+  {
+    link: "https://youtu.be/Tn6-PIqc4UM?si=XUs9YdGDrG1jbfhM",
+    img: "https://st4.depositphotos.com/10325396/21636/i/1600/depositphotos_216360862-stock-photo-programming-code-abstract-technology-background.jpg",
+    name: "Python",
+  },
+  {
+    link: "https://youtu.be/Tn6-PIqc4UM?si=XUs9YdGDrG1jbfhM",
+    img: "./m 2.png",
+    name: "Node.JS",
+  },
+  {
+    link: "https://youtu.be/Tn6-PIqc4UM?si=XUs9YdGDrG1jbfhM",
+    img: "./H2.jpg",
+    name: "React.JS",
+  },
+];
 export default function Services() {
   return (
     <div>
@@ -141,85 +158,32 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </div>
+        </div>{" "}
         <div className="grid-cols-1 sm:grid md:grid-cols-3 ">
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-            <a
-              href="https://youtu.be/Tn6-PIqc4UM?si=XUs9YdGDrG1jbfhM"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="rounded-t-lg"
-                src="./logo512.png"
-                alt="Skyscrapers"
-              />
-            </a>
-            <div className="p-6">
-              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+          {Cards.map((item) => (
+            <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+              <a href={item.link} target="_blank" rel="noreferrer">
+                <img
+                  className="rounded-t-lg"
+                  src={item.img}
+                  alt="Skyscrapers"
+                />
+              </a>
+              <div className="p-6">
+                <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                  {item.name}
+                </h5>
+                <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <div className="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
+                <small>Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div className="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-              <small>Last updated 3 mins ago</small>
-            </div>
-          </div>
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-            <a
-              href="https://youtu.be/Tn6-PIqc4UM?si=XUs9YdGDrG1jbfhM"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="rounded-t-lg"
-                src="./logo512.png"
-                alt="Skyscrapers"
-              />
-            </a>
-            <div className="p-6">
-              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </p>
-            </div>
-            <div className="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-              <small>Last updated 3 mins ago</small>
-            </div>
-          </div>
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-            <a
-              href="https://youtu.be/Tn6-PIqc4UM?si=XUs9YdGDrG1jbfhM"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="rounded-t-lg"
-                src="./logo512.png"
-                alt="Skyscrapers"
-              />
-            </a>
-            <div className="p-6">
-              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                Card title
-              </h5>
-              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-            </div>
-            <div className="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-              <small>Last updated 3 mins ago</small>
-            </div>
-          </div>
+          ))}
         </div>
       </>
     </div>

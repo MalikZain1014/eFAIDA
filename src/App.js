@@ -1,4 +1,5 @@
 import React from "react";
+import { Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Nav from "./Components/Nav";
@@ -13,24 +14,27 @@ import Error from "./Components/Error";
 import Apply from "./Components/Apply";
 import Regisnow from "./Components/Regisnow";
 import Internypay from "./Components/Internypay";
+import Loader from "./Components/Loader";
 
 function App() {
   return (
     <Router>
-      <Nav />
+      <Suspense fallback={<Loader />}>
+        <Nav />
 
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/*" element={<Error />} />
-        <Route path="/registernow" element={<Regisnow />} />
-        <Route path="/internypay" element={<Internypay />} />
-      </Routes>
-      <Apply />
-      <Footer />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/*" element={<Error />} />
+          <Route path="/registernow" element={<Regisnow />} />
+          <Route path="/internypay" element={<Internypay />} />
+        </Routes>
+        <Apply />
+        <Footer />
+      </Suspense>
     </Router>
   );
 }
