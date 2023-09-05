@@ -1,10 +1,7 @@
 import React from "react";
 import { Suspense } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
-
 import Login from "./Components/Login";
 import Main from "./Components/Main";
 import Services from "./Components/Services";
@@ -15,6 +12,8 @@ import Apply from "./Components/Apply";
 import Regisnow from "./Components/Regisnow";
 import Internypay from "./Components/Internypay";
 import Loader from "./Components/Loader";
+import Textarea from "./Components/Textarea";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -31,6 +30,7 @@ function App() {
           <Route path="/*" element={<Error />} />
           <Route path="/registernow" element={<Regisnow />} />
           <Route path="/internypay" element={<Internypay />} />
+          <Route path="/textarea" element={<Textarea />} />
         </Routes>
         <Apply />
         <Footer />

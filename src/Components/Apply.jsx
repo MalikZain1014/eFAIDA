@@ -1,4 +1,5 @@
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 export default function Example() {
   return (
@@ -21,17 +22,20 @@ export default function Example() {
                 id="email-address"
                 name="email"
                 type="email"
+                disabled
                 autoComplete="email"
                 required
                 className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                placeholder="Enter your email"
+                placeholder="registernow@gmail.com"
               />
-              <button
-                type="submit"
-                className="flex-none rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-transparent border-2 border-transparent hover:border-2 hover:border-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                Subscribe
-              </button>
+              <Link to="/registernow">
+                <button
+                  type="submit"
+                  className="flex-none rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-transparent border-2 border-transparent hover:border-2 hover:border-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                >
+                  Register Now
+                </button>
+              </Link>
             </div>
           </div>
           <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">

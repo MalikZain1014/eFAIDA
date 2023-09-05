@@ -11,7 +11,7 @@ export default function Register() {
   };
 
   if (!isVisible) {
-    return null; // Return null to make the component disappear
+    return null;
   }
 
   return (
@@ -52,13 +52,13 @@ export default function Register() {
               >
                 <circle cx={1} cy={1} r={1} />
               </svg>
-              Join us in Denver from Sep 1 – 29 to see what’s coming next.
+              We will provide you a Textarea aditional Services for your help
             </p>
             <Link
-              to="/registernow"
+              to="/textarea"
               className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
             >
-              Register now <span aria-hidden="true">&rarr;</span>
+              Text Utility<span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
         </div>
