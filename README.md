@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-Live Preview [(https://emalikstore.netlify.app)]
+Live Preview [(https://efaidatechnologies.netlify.app)]
 
 This project was TailwindCss with [Create React App](https://github.com/facebook/create-react-app).
 
